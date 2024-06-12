@@ -9,6 +9,9 @@ Cách để khởi động project (How to start the project):
 1. Use npm install to install node modules for the project
 
 2. Install the necessary modules (can use import command or use pip install)
+
+
+
   pip install Flask
   pip install python-dotenv
   pip install langchain-google-genai

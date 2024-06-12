@@ -64,7 +64,7 @@
     <input type="password" id="password" placeholder="Password">
     <button onclick="login()">Login</button>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
 
 // login() function:
@@ -86,16 +86,19 @@
         errorDiv.style.display = 'block';
         return;
       }
+      axios.post(`http://localhost:5000/api/signin?username=${username}&password=${password}`, {}, {mode: 'no-cors'})
+    .then(response => {
+        location.assign("home.html")
+    })
+    .catch(error => {
+        alert('Wrong USERNAME or PASSWORD');
+    });
 
-      // Replace with your actual authentication logic
-      if (username === 'user' && password === 'password') {
-        // Successful login
-        window.location.href = 'home.html'; // Replace with your actual page
-      } else {
-        errorDiv.textContent = 'Invalid username or password';
-        errorDiv.style.display = 'block';
-      }
     }
+
+    
+
+
   </script>
 </body>
 </html>

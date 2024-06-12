@@ -6,20 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NikoLove Chatbot Admin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" alt="Keep studying hard :3">
-  <link rel="stylesheet" href="admin.css"> </head>
+  <link rel="stylesheet" href="admin.css"> 
+  <script src="admin.js"></script>
+</head>
 
 <body>
   <header>
     <h1>NikoLove Chatbot Admin Panel</h1>
   </header>
 
+ 
+
   <main>
     <section id="user-management">
       <h2>User Management</h2>
-      <p>Edit user names and profile pictures.</p>
+      <!-- <div class = "dropdown">
+        <button>Edit user names and profile pictures </button>
+        <div class = "content">
+          <a href = ""> Kien Le</a>
+          <a href = ""> Hoang Anh</a>
+          <a href = ""> Tien Thanh</a>
+        </div>
+      </div> -->
+      <details class="dropdown">
+        <summary role="button">
+          <a class="button">Edit user names and profile pictures</a>
+        </summary>
+        <ul data-users>    
+      </ul>
+    </details>
+
+    <!-- <details class="dropdown">
+      <summary role="button">
+        <a class="button">Edit user names and profile pictures</a>
+      </summary>
       <ul>
-        <li>List of users with names (static for now)</li>
-        </ul>
+        <li><a href="#">Kien Le</a></li>
+        <li><a href="#">Hoang Anh</a></li>
+        <li><a href="#">Tien Thanh</a></li>
+    </ul>
+  </details> -->
+    
     </section>
     <section id="website-settings">
       <h2>Website Settings</h2>
@@ -42,5 +69,22 @@
   </main>
 
 </body>
+<script> console.log(19)
+ const userNode = document.querySelector("[data-users]"
+ ) 
+  const response =  fetch("http://127.0.0.1:5000/api/admin").then(response=>{
+  return response.json();
+  }).then(users=> {
+    users.forEach(user => {
+      const li = document.createElement("li")
+      li.textContent = user[1]
+      userNode.appendChild(li)
+    });
+  });
 
+
+
+</script>
 </html>
+
+<!-- tao 1 trang rieng de doi mat khau -->

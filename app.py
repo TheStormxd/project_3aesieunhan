@@ -120,11 +120,15 @@ def login():
 
     if (len(result) == 0):
         print("Error")
-        # return jsonify({'error': 'Sign Up Failed'}, status=200)
         return make_response(jsonify({"error": 'error'}), 404)
     else:
         print("Success")
         return make_response(jsonify({"success": 'success'}), 200)
+    
+       
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

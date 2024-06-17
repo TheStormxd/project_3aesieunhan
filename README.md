@@ -5,6 +5,8 @@
 
 
 Cách để khởi động project (How to start the project):
+Please download the code from this drive link since the file is heavy: https://drive.google.com/drive/folders/1Dzl4sZ_NjTBgK9e8Bws-8LhvnEui8NkW?usp=sharing
+
 
 1. Install the necessary modules in requirement.txt
 
@@ -17,4 +19,3 @@ Cách để khởi động project (How to start the project):
 
 Research Link: https://docs.google.com/document/d/1qQBeVAOqY9HARuSeZ_wsH-Yn23ngNdOdrLo49mqaMMw/edit?usp=sharing
 
-Please download the code from this drive link since the file is heavy: https://drive.google.com/drive/folders/1Dzl4sZ_NjTBgK9e8Bws-8LhvnEui8NkW?usp=sharing

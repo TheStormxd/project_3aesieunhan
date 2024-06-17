@@ -6,25 +6,9 @@
 
 Cách để khởi động project (How to start the project):
 
-1. Use npm install to install node modules for the project
+1. Install the necessary modules in requirement.txt
 
-2. Install the necessary modules (can use import command or use pip install)
-
-
-
-  pip install Flask
-  pip install python-dotenv
-  pip install langchain-google-genai
-  pip install langchain
-  pip install langchain-community
-  pip install sentence-transformers
-  pip install scikit-learn
-  pip install PyPDFium2
-  pip install chromadb
-  pip install langchain-huggingface
-  pip install mysql.connector
-  pip install CORS
-  pip install flask_cors
+2. After the install, run the enviroment
 
 3. Navigate to app.py and execute this line of code in the terminal: python .\app.py
 
@@ -32,3 +16,5 @@ Cách để khởi động project (How to start the project):
 
 
 Research Link: https://docs.google.com/document/d/1qQBeVAOqY9HARuSeZ_wsH-Yn23ngNdOdrLo49mqaMMw/edit?usp=sharing
+
+Please download the code from this drive link since the file is heavy: https://drive.google.com/drive/folders/1Dzl4sZ_NjTBgK9e8Bws-8LhvnEui8NkW?usp=sharing

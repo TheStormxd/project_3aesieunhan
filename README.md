@@ -5,6 +5,11 @@
 
 
 Cách để khởi động project (How to start the project):
+
+
+
+
+
 Please download the code from this drive link since the file is heavy: https://drive.google.com/drive/folders/1Dzl4sZ_NjTBgK9e8Bws-8LhvnEui8NkW?usp=sharing
 
 
